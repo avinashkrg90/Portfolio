@@ -8,7 +8,7 @@ import telephoneIcon from '../assets/telephone.png'
 const BasicLinks = () => {
     return (
         <>
-            <div>
+            <div className='flex gap-6 w-full min-h-full items-center '>
                 <div className="basicLinksContainer">
                     <div className="basicGitHubLinkContainer">
                         <img src={gitHubIcon} alt="GitHubLink" />
@@ -18,6 +18,8 @@ const BasicLinks = () => {
                         <img src={linkedinIcon} alt="LinkedInLink" />
                         <a target='_blank' href="https://www.linkedin.com/in/avinash-kumar-gupta-b4a265285/">avinash-kumar-gupta-b4a265285</a>
                     </div>
+                </div>
+                <div className="basicLinksContainer">
                     <div className="basicEmailContainer">
                         <img src={mailIcon} alt="Email" />
                         robozealous@gmail.com

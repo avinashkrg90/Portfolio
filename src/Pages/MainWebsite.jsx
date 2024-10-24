@@ -11,6 +11,7 @@ import Experience from './Experience'
 import Projects from './Projects'
 import Achievements from './Achievements'
 import Contact from './Contact'
+import Certifications from './Certifications'
 
 const MainWebsite = () => {
 
@@ -31,7 +32,6 @@ const MainWebsite = () => {
                 <div className="main_body">
                     <div className="main_UpperDiv bodyHeader">
                         <BasicLinks />
-                        <BasicLinks />
                     </div>
                     <div className="main_LowerDiv">
                         <div className="mainContentWrapper">
@@ -40,6 +40,7 @@ const MainWebsite = () => {
                             <Skills />
                             <Experience />
                             <Projects />
+                            <Certifications />
                             <Achievements />
                             <Contact />
                         </div>

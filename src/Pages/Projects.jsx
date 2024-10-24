@@ -16,11 +16,11 @@ const Projects = () => {
             <div className='w-full mb-20'>
                 <div className='w-full my-6'>
                     <ul className='flex justify-center items-center gap-4 text-lg'>
-                        <li onClick={()=>setProjectCategorySelected("all")} className={`cursor-pointer hover:text-orange-300 ${projectCategorySelected==='all'?'text-orange-400':null}`}>All</li>
-                        <li onClick={()=>setProjectCategorySelected("frontend")} className={`cursor-pointer hover:text-orange-300 ${projectCategorySelected==='frontend'?'text-orange-400':null}`}>Just Frontend</li>
-                        <li onClick={()=>setProjectCategorySelected("backend")} className={`cursor-pointer hover:text-orange-300 ${projectCategorySelected==='backend'?'text-orange-400':null}`}>Just Backend</li>
-                        <li onClick={()=>setProjectCategorySelected("mern")} className={`cursor-pointer hover:text-orange-300 ${projectCategorySelected==='mern'?'text-orange-400':null}`}>MERN</li>
-                        <li onClick={()=>setProjectCategorySelected("others")} className={`cursor-pointer hover:text-orange-300 ${projectCategorySelected==='others'?'text-orange-400':null}`}>Other</li>
+                        <li onClick={()=>setProjectCategorySelected("all")} className={`cursor-pointer hover:text-orange-300 ${projectCategorySelected==='all'?'text-orange-500':null}`}>All</li>
+                        <li onClick={()=>setProjectCategorySelected("frontend")} className={`cursor-pointer hover:text-orange-300 ${projectCategorySelected==='frontend'?'text-orange-500':null}`}>Just Frontend</li>
+                        <li onClick={()=>setProjectCategorySelected("backend")} className={`cursor-pointer hover:text-orange-300 ${projectCategorySelected==='backend'?'text-orange-500':null}`}>Just Backend</li>
+                        <li onClick={()=>setProjectCategorySelected("mern")} className={`cursor-pointer hover:text-orange-300 ${projectCategorySelected==='mern'?'text-orange-500':null}`}>MERN</li>
+                        <li onClick={()=>setProjectCategorySelected("others")} className={`cursor-pointer hover:text-orange-300 ${projectCategorySelected==='others'?'text-orange-500':null}`}>Other</li>
                     </ul>
                 </div>
                 <div className='flex flex-wrap justify-evenly gap-6 gap-y-8'>

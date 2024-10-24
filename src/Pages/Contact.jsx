@@ -23,7 +23,7 @@ const Contact = () => {
             <div className='flex w-full px-32'>
 
                 <div className='p-10 flex-[1]'>
-                    <div className='flex flex-col items-center justify-center bg-gray-50/40 rounded-3xl gap-5 p-6 h-full'>
+                    <div className='flex flex-col items-center justify-center bg-gray-50/40 rounded-xl gap-5 p-6 h-full'>
                         <div className='cursor-pointer'><img className='w-10' src={githubIcon} alt="git hub" /></div>
                         <div className='cursor-pointer'><img className='w-10' src={linkedinIcon} alt="linkedIn" /></div>
                         <div className='cursor-pointer'><img className='w-10' src={facebookIcon} alt="linkedIn" /></div>
@@ -32,7 +32,7 @@ const Contact = () => {
                 </div>
 
                 <div className='p-10 flex-[5] w-full'>
-                    <div className='bg-gray-50/40 rounded-3xl'>
+                    <div className='bg-gray-50/40 rounded-xl'>
 
                         <form action="" className='flex flex-col items-center justify-center gap-5 p-6'>
                             <h3 className='text-2xl text-gray-100'>Get in touch</h3>

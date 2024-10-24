@@ -17,6 +17,7 @@ const NavBar = ({ activeNavMenu, setActiveNavMenu }) => {
                     <li onClick={handleNavMenuClick} name="skills" className={activeNavMenu==='skills'?'nav_selected':'null'}>Skills</li>
                     <li onClick={handleNavMenuClick} name="experience" className={activeNavMenu==='experience'?'nav_selected':'null'}>Profession experience</li>
                     <li onClick={handleNavMenuClick} name="projects" className={activeNavMenu==='projects'?'nav_selected':'null'}>Projects</li>
+                    <li onClick={handleNavMenuClick} name="certifications" className={activeNavMenu==='certifications'?'nav_selected':'null'}>Certifications</li>
                     <li onClick={handleNavMenuClick} name="achievements" className={activeNavMenu==='achievements'?'nav_selected':'null'}>Achievements</li>
                     <li onClick={handleNavMenuClick} name="contact" className={activeNavMenu==='contact'?'nav_selected':'null'}>Contact</li>
                 </ul>

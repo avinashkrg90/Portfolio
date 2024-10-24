@@ -8,6 +8,11 @@ const Achievements = () => {
                 <h1 className='text-black font-bold text-3xl'>ACHIEVEMENTS</h1>
                 <img className='w-10' src={achievementsIcon} alt="Icon" />
             </div>
+
+            <div className='pb-24'>
+
+            </div>
+            
         </>
     )
 }
