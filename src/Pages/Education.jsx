@@ -10,7 +10,7 @@ const Education = () => {
                 <h1 className='text-black font-bold text-3xl'>EDUCATION</h1>
                 <img className='w-10' src={educationIcon} alt="Icon" />
             </div>
-            <div className='flex pb-12'>
+            <div className='flex pb-12 gap-8'>
 
                 <EducationCard heading="Graduation and Post Graduation" institute="Indian Institute of science Education and Research, Kolkata"
                     image={collegeLogo} description="completed 5 year Integrated BS-MS (Major in Physics) in year 2014" />
@@ -26,11 +26,13 @@ const Education = () => {
 const EducationCard = ({ heading, institute, image, description }) => {
     return (
         <>
-            <div className='flex-1 my-6 px-10'>
+            <div className='flex-1 my-6 p-10 '>
                 <h1 className='text-2xl border-b-2 border-gray-800 font-semibold mb-5 pb-1 text-black'>{heading}</h1>
-                <h3 className='text-orange-400'>University/Institute</h3>
+                <h3 className='text-orange-300 text-lg'>University/Institute</h3>
                 <div className='flex items-center gap-4 my-4 h-2/5'>
-                    <img className='w-24' src={image} alt="Logo" />
+                    <div className='min-w-40 h-[110px] bg-gray-50/80 rounded-full flex justify-center items-center'>
+                        <img className='w-24 mt-[-6px]' src={image} alt="Logo" />
+                    </div>
                     <p className='text-lg'>{institute}</p>
                 </div>
                 <div>

@@ -10,7 +10,6 @@ import Skills from './Skills'
 import Experience from './Experience'
 import Projects from './Projects'
 import Achievements from './Achievements'
-import Hobbies from './Hobbies'
 import Contact from './Contact'
 
 const MainWebsite = () => {
@@ -42,7 +41,6 @@ const MainWebsite = () => {
                             <Experience />
                             <Projects />
                             <Achievements />
-                            <Hobbies />
                             <Contact />
                         </div>
                     </div>
