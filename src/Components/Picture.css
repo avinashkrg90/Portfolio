@@ -1,0 +1,46 @@
+.basicContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.basicImageDivContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.basicImageContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 22vh;
+    height: 22vh;
+    overflow: hidden;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.basicImageContainer img{
+    width: 22vh;
+    /* aspect-ratio: 1; */
+    height: 28vh;
+    margin-top: -20px;
+}
+
+.basicImageDivContainer h3{
+    margin: 0px 0;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    user-select: none;
+}
+
+.basicHorizontalRuling{
+    width: 20%;
+    text-align: center;
+}

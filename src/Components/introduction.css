@@ -1,0 +1,116 @@
+
+.intro_container{
+    display: flex;
+}
+
+.intro_greet {
+    flex: 5;
+    width: 100%;
+    font-family: "Caveat", cursive;
+    text-align: left;
+    padding-left: 200px;
+}
+
+.intro_image{
+    flex: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.intro_imageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 50%; */
+}
+
+.intro_imageContainer img{
+    border-radius: 50%;
+    width: 300px;
+    height: 400px;
+}
+
+
+.intro_hi, .intro_iam, .intro_name, .intro_welcomePortfolio, .intro_letsGetStarted{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    font-size: 200px;
+    color: #ffffff;
+    opacity: 0;
+    animation: appearDisappear 1.4s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+
+.intro_hi{
+    animation-delay: 0.5s;
+    animation-duration: 1.4s;
+}
+
+.intro_iam{
+    left: 25%;
+    display: inline-block;
+    animation-delay: 2.2s;
+    animation-duration: 1.0s;
+}
+
+.intro_name{
+    top: 40%;
+    left: 12%;
+    font-size: 100px;
+    font-weight: 600;
+    color: rgb(13, 13, 13);
+    
+    animation-delay: 3.3s;
+    animation-duration: 2.5s;
+}
+
+.intro_welcomePortfolio{
+    top: 42%;
+    left: 8%;
+    font-size: 80px;
+    font-weight: 500;
+    color: #ffffff;
+
+    animation-delay: 6.1s;
+    animation-duration: 2.5s;
+}
+
+.intro_welcomePortfolio span{
+    color: #ce3de4;
+}
+
+.intro_letsGetStarted{
+    top: 40%;
+    left: 18%;
+    color: rgb(13, 13, 13);
+    font-size: 100px;
+    font-weight: 500;
+    animation-delay: 8.5s;
+    animation-duration: 2.5s;
+}
+
+@keyframes appearDisappear {
+
+    0%{
+        /* transform: translateX(0); */
+        opacity: 0;
+    }
+
+    15%{
+        opacity: 1;
+    }
+
+    70%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+
+}
+
