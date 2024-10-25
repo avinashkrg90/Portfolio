@@ -13,7 +13,7 @@ const Projects = () => {
                 <img className='w-10' src={projectsIcon} alt="Icon" />
             </div>
 
-            <div className='w-full mb-20'>
+            <div className='w-full mb-24'>
                 <div className='w-full my-6'>
                     <ul className='flex justify-center items-center gap-4 text-lg'>
                         <li onClick={()=>setProjectCategorySelected("all")} className={`cursor-pointer hover:text-orange-300 ${projectCategorySelected==='all'?'text-orange-500':null}`}>All</li>
@@ -26,6 +26,10 @@ const Projects = () => {
                 <div className='flex flex-wrap justify-evenly gap-6 gap-y-8'>
                     <ProjectCards projectCategory={projectCategorySelected}/>
                 </div>
+            </div>
+
+            <div className='mb-16 w-8/12 mx-auto'>
+                <hr />
             </div>
         </>
     )

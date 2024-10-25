@@ -1,9 +1,9 @@
 import React from 'react'
 import './BasicLinks.css'
-import gitHubIcon from '../assets/github2.png'
+import gitHubIcon from '../assets/github3.png'
 import linkedinIcon from '../assets/linkedin.png'
-import mailIcon from '../assets/mail.png'
-import telephoneIcon from '../assets/telephone.png'
+import mailIcon from '../assets/email.png'
+import telephoneIcon from '../assets/phone.png'
 
 const BasicLinks = () => {
     return (

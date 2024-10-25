@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import contactIcon from '../assets/contact.png'
-import githubIcon from '../assets/github2.png'
+import githubIcon from '../assets/github3.png'
 import linkedinIcon from '../assets/linkedin.png'
 import facebookIcon from '../assets/facebook.png'
+import whatsappIcon from '../assets/whatsapp.png'
 
 const Contact = () => {
 
@@ -24,10 +25,10 @@ const Contact = () => {
 
                 <div className='p-10 flex-[1]'>
                     <div className='flex flex-col items-center justify-center bg-gray-50/40 rounded-xl gap-5 p-6 h-full'>
-                        <div className='cursor-pointer'><img className='w-10' src={githubIcon} alt="git hub" /></div>
-                        <div className='cursor-pointer'><img className='w-10' src={linkedinIcon} alt="linkedIn" /></div>
-                        <div className='cursor-pointer'><img className='w-10' src={facebookIcon} alt="linkedIn" /></div>
-                        <div className='cursor-pointer'><img className='w-10' src={linkedinIcon} alt="linkedIn" /></div>
+                        <a href="https://github.com/avinashkrg90" target='_blank'><div className='cursor-pointer'><img className='w-10' src={githubIcon} alt="git hub" /></div></a>
+                        <a href="https://www.linkedin.com/in/avinash-kumar-gupta-b4a265285/" target='_blank'><div className='cursor-pointer'><img className='w-10' src={linkedinIcon} alt="linkedIn" /></div></a>
+                        <div className='cursor-pointer'><img className='w-10' src={facebookIcon} alt="Facebook" /></div>
+                        <div className='cursor-pointer'><img className='w-10' src={whatsappIcon} alt="Whatsapp" /></div>
                     </div>
                 </div>
 

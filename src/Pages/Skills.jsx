@@ -14,18 +14,21 @@ const Skills = () => {
                 <img className='w-10' src={skillsIcon} alt="Icon" />
             </div>
 
-            <div className="skills_mainContainer w-full min-h-[550px] pt-6 flex pb-24 mt-3">
-                <div className="flex-[2] m-auto">
+            <div className="skills_mainContainer w-full min-h-[550px] pt-6 flex pb-20 mt-3 mx-10">
+                <div className="flex-[3] m-auto">
                     <ul className='flex flex-col items-end gap-3 text-xl text-black font-medium'>
-                        <li className={`select-none duration-300 p-3 w-full flex items-center justify-end gap-3 cursor-pointer hover:bg-gray-300 ${skillSelected==="frontend"?'bg-gray-50/40':'bg-transparent'}`} onClick={()=>setSkillSelected("frontend")}>Frontend Developing {skillSelected==="frontend"?null:<img className='w-3 h-3' src={rightArrowIcon} alt=">" />} </li>
-                        <li className={`select-none duration-300 p-3 w-full flex items-center justify-end gap-3 cursor-pointer hover:bg-gray-300 ${skillSelected==="backend"?'bg-gray-50/40':'bg-transparent'}`} onClick={()=>setSkillSelected("backend")}>Backend Developing {skillSelected==="backend"?null:<img className='w-3 h-3' src={rightArrowIcon} alt=">" />}</li>
-                        <li className={`select-none duration-300 p-3 w-full flex items-center justify-end gap-3 cursor-pointer hover:bg-gray-300 ${skillSelected==="embedded"?'bg-gray-50/40':'bg-transparent'}`} onClick={()=>setSkillSelected("embedded")}>Embedded Systems {skillSelected==="embedded"?null:<img className='w-3 h-3' src={rightArrowIcon} alt=">" />}</li>
-                        <li className={`select-none duration-300 p-3 w-full flex items-center justify-end gap-3 cursor-pointer hover:bg-gray-300 ${skillSelected==="otherSoft"?'bg-gray-50/40':'bg-transparent'}`} onClick={()=>setSkillSelected("otherSoft")}>Other Soft skills {skillSelected==="otherSoft"?null:<img className='w-3 h-3' src={rightArrowIcon} alt=">" />}</li>
+                        <li className={`select-none duration-300 p-3 w-full flex items-center justify-end gap-3 cursor-pointer hover:bg-gray-300 ${skillSelected === "frontend" ? 'bg-gray-50/40 font-semibold' : 'bg-transparent font-medium'}`} onClick={() => setSkillSelected("frontend")}>Frontend Developing {skillSelected === "frontend" ? null : <img className='w-3 h-3' src={rightArrowIcon} alt=">" />} </li>
+                        <li className={`select-none duration-300 p-3 w-full flex items-center justify-end gap-3 cursor-pointer hover:bg-gray-300 ${skillSelected === "backend" ? 'bg-gray-50/40 font-semibold' : 'bg-transparent font-medium'}`} onClick={() => setSkillSelected("backend")}>Backend Developing {skillSelected === "backend" ? null : <img className='w-3 h-3' src={rightArrowIcon} alt=">" />}</li>
+                        <li className={`select-none duration-300 p-3 w-full flex items-center justify-end gap-3 cursor-pointer hover:bg-gray-300 ${skillSelected === "embedded" ? 'bg-gray-50/40 font-semibold' : 'bg-transparent font-medium'}`} onClick={() => setSkillSelected("embedded")}>Embedded Systems {skillSelected === "embedded" ? null : <img className='w-3 h-3' src={rightArrowIcon} alt=">" />}</li>
+                        <li className={`select-none duration-300 p-3 w-full flex items-center justify-end gap-3 cursor-pointer hover:bg-gray-300 ${skillSelected === "otherSoft" ? 'bg-gray-50/40 font-semibold' : 'bg-transparent font-medium'}`} onClick={() => setSkillSelected("otherSoft")}>Other Soft skills {skillSelected === "otherSoft" ? null : <img className='w-3 h-3' src={rightArrowIcon} alt=">" />}</li>
                     </ul>
                 </div>
-                <div className="w-full flex-[4] rounded-2xl bg-gray-50/40 text-black py-8 px-20">
+                <div className="flex-[4] rounded-2xl bg-gray-50/40 text-black py-8 px-20 mr-40">
                     <SkillBars skillSelected={skillSelected} />
                 </div>
+            </div>
+            <div className='mb-16 w-8/12 mx-auto'>
+                <hr />
             </div>
         </>
     )
