@@ -1,24 +1,41 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import collegeLogo from '../assets/IISER-K_Logo.png'
 import kvsLogo from '../assets/kvslogo.jpg'
 import educationIcon from '../assets/mortarboard.png'
+import { useInView } from "react-intersection-observer";
 
-const Education = () => {
+const Education = ({ educationRef, setActiveNavMenu }) => {
+
+    const { ref, inView } = useInView({
+        threshold: 0.5,
+    });
+
+    useEffect(() => {
+        if (inView) {
+            setActiveNavMenu("education");
+        }
+    }, [inView])
+
+
     return (
         <>
-            <div className="w-full flex justify-center items-center gap-3">
+            <div ref={educationRef} className="w-full flex justify-center items-center gap-3">
                 <h1 className='text-black font-bold text-3xl'>EDUCATION</h1>
                 <img className='w-10' src={educationIcon} alt="Icon" />
             </div>
-            <div className='flex pb-6 gap-8'>
 
-                <EducationCard heading="Graduation and Post Graduation" institute="Indian Institute of science Education and Research, Kolkata"
-                    image={collegeLogo} description="completed 5 year Integrated BS-MS (Major in Physics) in year 2014" />
+            <div ref={ref}>
+                <div className='flex pb-6 gap-8'>
 
-                <EducationCard heading="Higher Secondary Certificate (HSC)" institute="Kendriya Vidyalaya, Danapur cantt."
-                    image={kvsLogo} description="completed HSC in Science (P+C+M) in year 2008" />
+                    <EducationCard heading="Graduation and Post Graduation" institute="Indian Institute of science Education and Research, Kolkata"
+                        image={collegeLogo} description="completed 5 year Integrated BS-MS (Major in Physics) in year 2014" />
 
+                    <EducationCard heading="Higher Secondary Certificate (HSC)" institute="Kendriya Vidyalaya, Danapur cantt."
+                        image={kvsLogo} description="completed HSC in Science (P+C+M) in year 2008" />
+
+                </div>
             </div>
+
             <div className='mb-16 w-8/12 mx-auto'>
                 <hr />
             </div>

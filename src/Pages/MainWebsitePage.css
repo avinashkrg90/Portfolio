@@ -25,6 +25,7 @@
     height: 15vh;
     min-height: 15vh;
     background-color: rgb(143, 109, 228, 0.3);
+    border-bottom: 4px solid white;
 }
 
 .bodyHeader{

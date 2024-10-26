@@ -1,6 +1,7 @@
 .nav_navContainer{
     width: 100%;
     padding: 0px 20px;
+    /* border-radius: 10px; */
     /* margin-top: 15vh; */
 }
 
@@ -21,13 +22,17 @@
     padding-right: 20px;
     cursor: pointer;
     user-select: none;
+    border-radius: 15px;
 }
 
 .nav_navContainer ul li:hover{
     color: rgb(0, 0, 0);
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+    background-color: rgb(255, 181, 44);
 }
 
 .nav_selected{
-    background-color: rgb(216, 131, 71);
+    /* background-color: rgb(216, 131, 71); */
+    background-color: black;
+    /* color: orange !important; */
 }
