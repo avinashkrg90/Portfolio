@@ -20,7 +20,7 @@ const Education = ({ educationRef, setActiveNavMenu }) => {
     return (
         <>
             <div ref={educationRef} className="w-full flex justify-center items-center gap-3">
-                <h1 className='text-black font-bold text-3xl'>EDUCATION</h1>
+                <h1 className='text-blue-600  font-bold text-3xl'>EDUCATION</h1>
                 <img className='w-10' src={educationIcon} alt="Icon" />
             </div>
 
@@ -46,9 +46,9 @@ const Education = ({ educationRef, setActiveNavMenu }) => {
 const EducationCard = ({ heading, institute, image, description }) => {
     return (
         <>
-            <div className='flex-1 my-6 p-10 '>
-                <h1 className='text-2xl border-b-2 border-gray-800 font-semibold mb-5 pb-1 text-black'>{heading}</h1>
-                <h3 className='text-orange-300 font-semibold text-lg'>University/Institute</h3>
+            <div className='flex-1 my-6 p-10 hover:scale-110 duration-200'>
+                <h1 className='text-2xl border-b-2 border-gray-800 font-semibold mb-5 pb-1 text-blue-400'>{heading}</h1>
+                <h3 className='text-blue-600 font-semibold text-lg'>University/Institute</h3>
                 <div className='flex items-center gap-4 my-4 h-2/5'>
                     <div className='min-w-40 h-[110px] bg-gray-50/80 rounded-full flex justify-center items-center'>
                         <img className='w-24 mt-[-6px]' src={image} alt="Logo" />

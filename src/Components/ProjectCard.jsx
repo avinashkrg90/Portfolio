@@ -5,7 +5,7 @@ const ProjectCard = ({ project }) => {
 
     return (
         <>
-            <div className='w-[260px] bg-gray-50/40 p-2 rounded-lg'>
+            <div className='w-[300px] bg-gray-50/40 p-2 rounded-lg'>
                 <img className='cursor-pointer w-full rounded-lg hover:scale-110 duration-200 shadow-xl' src={`./src/assets/projectsImage/${project.thumbnail}`} alt="image" />
                 <h3 className='text-lg text-white font-semibold text-center mt-4'>{project.title}</h3>
                 <div className='flex justify-between items-center'>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './app.css'
 import Introduction from './Components/Introduction'
 import MainWebsite from './Pages/MainWebsite'
+import mypic from './assets/mybnwpic.png'
 
 const App = () => {
 
@@ -15,16 +16,19 @@ const App = () => {
 
     return (
         <>
-            <div className={`"introductionContainer" ${runningIntro ? "visible": "invisible"}`}>
+            {/* <div className={`"introductionContainer" ${runningIntro ? "visible": "invisible"}`}>
                 <Introduction />
-            </div>
+            </div> */}
 
             <div className={`"mainWebsiteContainer" ${runningIntro ? "mainInvisible": "mainVisible"}`}>
                 <MainWebsite />
             </div>
 
             <div class="area" >
-                <ul class="circles">
+                <div className='w-full h-[100vh]'>
+                    <img className='h-full' src={mypic} alt="" />
+                </div>
+                {/* <ul class="circles">
                     <li></li>
                     <li></li>
                     <li></li>
@@ -35,7 +39,7 @@ const App = () => {
                     <li></li>
                     <li></li>
                     <li></li>
-                </ul>
+                </ul> */}
             </div >
         </>
     )
